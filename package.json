@@ -13,6 +13,7 @@
   "dependencies": {
     "debug": "^2.6.0",
     "express": "^4.14.1",
+    "qrcode-terminal": "^0.11.0",
     "wechat": "^2.0.3",
     "wechat4u": "^0.6.8"
   }
