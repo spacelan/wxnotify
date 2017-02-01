@@ -1,0 +1,19 @@
+{
+  "name": "wxnotify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "DEBUG=master,worker nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.6.0",
+    "express": "^4.14.1",
+    "wechat": "^2.0.3",
+    "wechat4u": "^0.6.8"
+  }
+}
