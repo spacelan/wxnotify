@@ -45,6 +45,13 @@ app.use(express.query())
 
 app.use('/wechat', wechat(config)
   .text((info, req, res, next) => {
+    if (/cgi-bin\/mmsupport-bin\/addchatroombyinvite\?ticket/.test(info.Content)){
+      res.reply(info.Content)
+    } else {
+      next()
+    }
+  })
+  .text((info, req, res, next) => {
     debug(info)
     let workerIndex = Array.from(info.FromUserName).reduce((a, b) => {
       return a + b.charCodeAt()
